@@ -1,0 +1,101 @@
+.container{
+    width: 80vw;
+    min-height: 80vh;
+    padding-top: 10vh;
+    margin: auto;
+    display: flex;
+    border: 2px solid red;
+}
+.insideContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 20px solid orange;
+}
+.left{
+    position: relative;
+    width: 35vw;
+    height: 50vh;
+    border: 2px solid black;
+    padding: 8rem;
+
+  }
+  
+  .left .colorBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    width: 70%;
+    background-color: #A0C916;
+    border: 2px solid red;
+
+  }
+  .left .imageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    height: 95%;
+    width: 95%;
+    border: 2px solid red;
+}
+
+.left .imageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+  .right{
+    width: 40vw;
+    display: flex;
+    padding:4rem;
+    flex-direction: column;
+    gap: .5rem;
+    border: 2px solid red;
+  }
+  .right .content{
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .right .bar{
+    content: "";
+    height: 2px;
+    width: 2rem;
+    background-color: #A0C916;
+  }
+  
+
+  .right .userDetails {
+    display: flex;
+    gap: .4rem;
+    flex-direction: column;
+  }
+
+
+  .right .userDetails  .dash{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 1.2rem;
+    margin-bottom: .25rem;
+    border-radius: 10px;
+    margin-right: 2px;
+    background-color:black;
+  }
+
+  .right .userDetails .text{
+    font-weight: bolder;
+  }
+
+  .right .userDetails .date{
+    font-size: .6rem;
+    font-weight: bold;
+    color: #FFBCB1;
+  }

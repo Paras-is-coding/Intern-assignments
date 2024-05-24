@@ -1,0 +1,299 @@
+.navbar{
+    height: 4rem;
+    width: 100vw;
+    margin-top: 2rem;
+    background-color: #41448B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.main{
+    padding: 8vh 8vw;
+    display: flex;
+    min-height: 80vh;
+    border: 2px solid black;
+}
+.main .mainLeft{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    gap:2rem;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.mainLeft .mainHeading{
+    line-height: 4rem;
+    font-size: 2.2rem;
+    opacity: .8;
+    height: auto;
+}
+
+.mainLeft .mainParagraph{
+    line-height: 1.8rem;
+    opacity: .5;
+    height: auto;
+}
+
+.mainLeft .videoPlay{
+    height: 4rem;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #41448B;
+}
+.mainLeft .videoPlay:hover{
+    background-color: white;
+    color:#41448B;
+    border: 2px solid #41448B;
+}
+
+.mainLeft .videoPlay .playIcon{
+    font-size: 2rem;
+}
+.mainLeft .videoPlay span{
+
+}
+
+.main .mainRight{
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainRight .imagesContainer{
+    position: relative;
+    height: 40%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.mainRight .imagesContainer .image1{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height: 80%;
+    width: 80%;
+    z-index: 20;
+    animation: moveImage1 2s forwards  ;
+
+}
+.mainRight .imagesContainer .image1 img{
+    height: 100%;
+    object-fit: cover;
+
+}
+.mainRight .imagesContainer .image2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.mainRight .imagesContainer .image2 img{
+    height: 100%;
+    object-fit: cover;
+
+}
+.mainRight .imagesContainer .image3{
+    position: absolute;
+    height: 80%;
+    width: 80%;   
+    bottom: 0; 
+    right: 60%;
+    z-index: 20;
+    animation: moveImage3 2s forwards  ;
+}
+.mainRight .imagesContainer .image3 img{
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.infrastructure{
+    padding: 8vh 8vw;
+}
+
+.infrastructure .heading{
+    display: flex;
+    flex-direction: column;
+}
+.infrastructure .heading .largeHeading{
+    display: flex;
+    gap: .5rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+.infrastructure .heading .largeHeading .textI{
+    font-weight: lighter;
+    opacity: .8;
+}
+.infrastructure .heading .largeHeading .textII{
+    opacity: .8;
+}
+.infrastructure .heading .smallHeading{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.infrastructure .mainContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    min-height: 100vh;
+    padding: 10px;
+    border: 2px solid red;
+    grid-template-areas: 
+    "item1 item2 item3 item3"
+    "item1 item2 item3 item3"
+    "item4 item4 item5 item6"
+    "item4 item4 item5 item9"
+    "item7 item8 item8 item9"
+    ;
+}
+
+.item1 {
+    border: 2px solid black;
+    grid-area: item1;
+    padding: 1rem;
+}
+ .specifiyingHeading{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+ .specifiyingHeading .number{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #bcbde2;
+    -webkit-text-stroke: 2px #41448B;
+}
+ .specifiyingHeading div{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: .6;
+}
+.item2 {
+    border: 2px solid black;
+    grid-area: item2;
+    background: url("https://islington.edu.np/images/infrastructure/img-1.png") no-repeat center center;
+    background-size: cover;
+    
+
+}
+.item3 {
+    border: 2px solid black;
+    grid-area: item3;
+    background: url("https://islington.edu.np/images/infrastructure/img-2.png") no-repeat center center;
+    background-size: cover;
+
+
+}
+
+.item4 {
+    border: 2px solid black;
+    grid-area: item4;
+    background: url("https://islington.edu.np/images/infrastructure/img-3.png") no-repeat center center;
+    background-size: cover;
+
+}
+.item5 {
+    border: 2px solid black;
+    grid-area: item5;
+    padding: 1rem;
+
+}
+.item6 {
+    border: 2px solid black;
+    grid-area: item6;
+    background: url("https://islington.edu.np/images/infrastructure/img-4.png") no-repeat center center;
+    background-size: cover;
+
+}
+.item7 {
+    border: 2px solid black;
+    grid-area: item7;
+
+}
+.item8 {
+    border: 2px solid black;
+    grid-area: item8;
+    background: url("https://islington.edu.np/images/infrastructure/img-5.png") no-repeat center center;
+    background-size: cover;
+
+}
+.item9 {
+    border: 2px solid black;
+    grid-area: item9;
+    background: url("https://islington.edu.np/images/infrastructure/img-6.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+@keyframes moveImage3 {
+    0%{
+        transform: translate(0, 0);
+    }100%{
+        transform: translate(0%, -80%);
+    }
+}
+@keyframes moveImage1 {
+    0%{
+        transform: translate(0, 0);
+    }100%{
+        transform: translate(0%, 80%);
+    }
+}
+
+
+@media screen and (max-width:1250px) {
+    .mainLeft .mainHeading{
+        line-height: 4rem;
+        font-size: 2rem;
+        opacity: .8;
+    }
+    
+    .mainLeft .mainParagraph{
+        line-height: 1.8rem;
+        opacity: .5;
+    }
+    .main{
+        padding:8vh 4vw;
+    }
+    .mainRight .imagesContainer .image3{
+        height: 60%;
+        width: 60%;
+        right: 40%;
+    }
+    .mainRight .imagesContainer .image2{
+        height: 80%;
+        width: 80%;
+    }
+    .mainRight .imagesContainer .image1{
+        height: 60%;
+        width: 60%;
+        left: 40%;
+    }
+  
+}
